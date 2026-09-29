@@ -49,6 +49,11 @@ function buildActorInput(
 			input.mode = 'search';
 			break;
 		}
+		case 'business:get': {
+			input.url = requireString.call(this, 'url', 'Business URL', itemIndex);
+			input.mode = 'detail';
+			break;
+		}
 		default:
 			throw new NodeOperationError(
 				this.getNode(),
@@ -112,6 +117,12 @@ export class YelpBusinessScraper implements INodeType {
 				},
 				options: [
 					{
+						name: 'Get',
+						value: 'get',
+						description: 'Get one business by its Yelp page URL',
+						action: 'Get a business',
+					},
+					{
 						name: 'Search',
 						value: 'search',
 						description: 'Search Yelp businesses by keyword and location',
@@ -164,6 +175,21 @@ export class YelpBusinessScraper implements INodeType {
 					show: {
 						resource: ['business'],
 						operation: ['search'],
+					},
+				},
+			},
+			{
+				displayName: 'Business URL',
+				name: 'url',
+				type: 'string',
+				required: true,
+				default: '',
+				placeholder: 'https://www.yelp.com/biz/tartine-bakery-san-francisco',
+				description: 'The business page URL on yelp.com',
+				displayOptions: {
+					show: {
+						resource: ['business'],
+						operation: ['get'],
 					},
 				},
 			},
