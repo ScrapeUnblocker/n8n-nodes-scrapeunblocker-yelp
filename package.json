@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-scrapeunblocker-yelp",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community node for the Yelp Business Scraper Apify Actor by ScrapeUnblocker: Yelp businesses with rating, review count, price, categories, address, phone, website and hours as JSON",
 	"license": "MIT",
 	"homepage": "https://github.com/ScrapeUnblocker/n8n-nodes-scrapeunblocker-yelp#readme",
