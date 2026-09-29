@@ -62,6 +62,7 @@ Pick a **Resource** and an **Operation**. Each n8n input item starts one Apify r
 | Resource | Operation | Fields | Returns |
 |---|---|---|---|
 | **Business** | Search | **Search Term** (required) - What to search for, e.g. coffee or plumbers<br>**Location** (required) - Where to search: a city, neighborhood, address or ZIP code, e.g. San Francisco, CA<br>**Max Results** - How many businesses to collect | One item per business |
+| **Business** | Get | **Business URL** (required) - The business page URL on yelp.com | One item with the business details |
 
 ### Options
 
@@ -192,3 +193,4 @@ Tested with n8n 2.40 (self-hosted).
 
 - 0.1.0: Initial release
 - 0.1.1: First release published from GitHub Actions with an npm provenance statement
+- 0.1.2: Get operation for one business by URL
