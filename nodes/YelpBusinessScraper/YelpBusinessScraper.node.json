@@ -1,0 +1,33 @@
+{
+	"node": "n8n-nodes-scrapeunblocker-yelp.yelpBusinessScraper",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Sales",
+		"Data & Storage"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/ScrapeUnblocker/n8n-nodes-scrapeunblocker-yelp#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/ScrapeUnblocker/n8n-nodes-scrapeunblocker-yelp#readme"
+			}
+		]
+	},
+	"alias": [
+		"yelp",
+		"local business",
+		"restaurants",
+		"leads",
+		"local seo",
+		"business directory",
+		"reviews",
+		"scraper",
+		"apify",
+		"scrapeunblocker"
+	]
+}
